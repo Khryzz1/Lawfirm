@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Lawyers | Valerius, Thronus & Associates</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="image/xAEpg.jpg.jpeg" alt="Valerius Thronus & Associates" />
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="practices.html">Practices</a>
+      <a href="ourlawyers.html" class="active">Our Lawyers</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+    <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1>Our Lawyers</h1>
+      <div class="divider"></div>
+      <p class="tagline">Meet the Minds Behind Your Legal Representation</p>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Senior Partners</h2>
+        <div class="divider"></div>
+        <p>Our founding partners bring decades of experience and an unwavering commitment to client success.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="image/Bigman.JPEG" alt="Marcus Valerius" />
+          <h3>Marcus Valerius</h3>
+          <p class="role">Senior Partner — Corporate Law</p>
+          <p style="font-size:0.95rem; margin-top:0.5rem;">25 years of experience advising on major mergers, acquisitions and corporate governance across West Africa.</p>
+        </div>
+        <div class="team-member">
+          <img src="image/whitewomanlawyerJPEG.JPEG" alt="Diana Thronus" />
+          <h3>Diana Thronus</h3>
+          <p class="role">Senior Partner — Civil Litigation</p>
+          <p style="font-size:0.95rem; margin-top:0.5rem;">A formidable courtroom advocate with over 20 years of success in high-stakes civil and commercial litigation.</p>
+        </div>
+        <div class="team-member">
+          <img src="image/Simon.JPEG" alt="Simon Walters" />
+          <h3>Simon Walters</h3>
+          <p class="role">Senior Partner — Criminal Defence</p>
+          <p style="font-size:0.95rem; margin-top:0.5rem;">Renowned for his tenacious defence strategy and extensive knowledge of criminal procedure and constitutional law.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSOCIATE LAWYERS -->
+  <section class="practice-areas">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Associate Attorneys</h2>
+        <div class="divider"></div>
+        <p>Our associates are highly trained lawyers dedicated to delivering the firm's high standard of legal excellence.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="image/Blackgirllawyer.JPEG" alt="Adwoa Mensah" />
+          <h3>Adwoa Mensah</h3>
+          <p class="role">Associate — Family Law</p>
+          <p style="font-size:0.95rem; margin-top:0.5rem;">Specialises in custody, divorce and adoption matters with a compassionate, client-first approach.</p>
+        </div>
+        <div class="team-member">
+          <img src="image/Blackk.JPEG" alt="Steven Gunn" />
+          <h3>Steven Gunn</h3>
+          <p class="role">Associate — Real Estate Law</p>
+          <p style="font-size:0.95rem; margin-top:0.5rem;">Expert in property transactions, land disputes and real estate development financing.</p>
+        </div>
+        <div class="team-member">
+          <img src="image/Steve.JPEG" alt="Jared Blackk" />
+          <h3>Jared Blackk</h3>
+          <p class="role">Associate — Employment & Immigration</p>
+          <p style="font-size:0.95rem; margin-top:0.5rem;">Advises on workplace rights, employment contracts, work permits and immigration matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN THE TEAM -->
+  <section class="cta-banner">
+    <div class="section-inner" style="text-align:center;">
+      <h2>Join Our Team</h2>
+      <div class="divider"></div>
+      <p>We are always looking for talented, driven legal professionals who share our values of integrity, excellence and covenant. If you believe you are a fit, we would love to hear from you.</p>
+      <a href="contactus.html" class="btn btn-solid">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="image/xAEpg.jpg.jpeg" alt="Firm Logo" class="footer-logo" />
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="practices.html">Practices</a>
+      <a href="ourlawyers.html">Our Lawyers</a>
+      <a href="contactus.html">Contact</a>
+    </div>
+    <p class="copyright">&copy; 2026 Valerius, Thronus & Associates. All Rights Reserved.</p>
+    <p class="copyright">Covenanted Counselors at Law</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle — closes when link clicked
+    document.addEventListener("DOMContentLoaded", function() {
+      var navLinks = document.querySelectorAll("nav a");
+      navLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+          document.querySelector("nav").classList.remove("open");
+        });
+      });
+    });
+    function toggleMenu() {
+      document.querySelector('nav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

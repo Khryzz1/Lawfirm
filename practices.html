@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practice Areas | Valerius, Thronus & Associates</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="image/xAEpg.jpg.jpeg" alt="Valerius Thronus & Associates" />
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="practices.html" class="active">Practices</a>
+      <a href="ourlawyers.html">Our Lawyers</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+    <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1>Our Practice Areas</h1>
+      <div class="divider"></div>
+      <p class="tagline">Comprehensive Legal Services Tailored to Your Needs</p>
+    </div>
+  </section>
+
+  <!-- PRACTICE AREAS DETAILED -->
+  <section class="practice-areas">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Areas of Legal Expertise</h2>
+        <div class="divider"></div>
+        <p>Our attorneys bring deep expertise across every major area of law, ensuring you receive the right counsel for your specific situation.</p>
+      </div>
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <h3>Corporate Law</h3>
+          <p>We advise businesses of all sizes on corporate structure, mergers and acquisitions, shareholder agreements, regulatory compliance, and corporate governance. Whether you are launching a startup or managing a multinational, we are your trusted legal partner.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
+          <h3>Civil Litigation</h3>
+          <p>Our litigators are seasoned courtroom advocates with a track record of success in complex civil disputes. We handle breach of contract, tortious claims, commercial disputes and enforcement of judgments with strategic precision.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-house-chimney"></i></div>
+          <h3>Real Estate Law</h3>
+          <p>From purchase and sale agreements to title disputes and development financing, our real estate team provides comprehensive legal guidance for individuals, developers and institutional investors across all property transactions.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-people-roof"></i></div>
+          <h3>Family Law</h3>
+          <p>We handle divorce, legal separation, child custody and support, adoption, prenuptial agreements and domestic matters with both compassion and legal rigour — protecting your family's best interests at every stage.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Criminal Defence</h3>
+          <p>Our criminal defence attorneys provide aggressive, principled representation for clients facing charges at every level — from minor offences to serious felonies. We safeguard your rights and pursue every available defence.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-scroll"></i></div>
+          <h3>Estate Planning</h3>
+          <p>We craft wills, trusts, powers of attorney and comprehensive succession plans that protect your legacy and ensure your wishes are honoured. Our probate team also guides families through estate administration.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Employment Law</h3>
+          <p>We represent both employers and employees in matters of wrongful termination, workplace discrimination, employment contracts, redundancy and labour disputes — ensuring fair and lawful outcomes for all parties.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-earth-africa"></i></div>
+          <h3>Immigration Law</h3>
+          <p>Our immigration attorneys assist individuals, families and corporations with visas, work permits, residency applications, citizenship and immigration appeals — navigating complex procedures with expertise.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Intellectual Property</h3>
+          <p>We protect your innovations, brands and creative works through trademark registration, patent advisory, copyright enforcement and IP litigation — safeguarding what makes your business unique.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="section-inner" style="text-align:center;">
+      <h2>Need Legal Assistance?</h2>
+      <div class="divider"></div>
+      <p>Contact us today to speak with an attorney who specialises in your area of need.</p>
+      <a href="contactus.html" class="btn btn-solid">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="image/xAEpg.jpg.jpeg" alt="Firm Logo" class="footer-logo" />
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="practices.html">Practices</a>
+      <a href="ourlawyers.html">Our Lawyers</a>
+      <a href="contactus.html">Contact</a>
+    </div>
+    <p class="copyright">&copy; 2026 Valerius, Thronus & Associates. All Rights Reserved.</p>
+    <p class="copyright">Covenanted Counselors at Law</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle — closes when link clicked
+    document.addEventListener("DOMContentLoaded", function() {
+      var navLinks = document.querySelectorAll("nav a");
+      navLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+          document.querySelector("nav").classList.remove("open");
+        });
+      });
+    });
+    function toggleMenu() {
+      document.querySelector('nav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
